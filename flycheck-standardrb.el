@@ -12,7 +12,7 @@ Otherwise report style issues as well."
 
 (flycheck-define-checker ruby-standardrb
   "A Ruby syntax and style checker using the testdouble/standard gem."
-  :command ("standardrb"
+  :command ("bundle" "exec" "standardrb"
             "--display-cop-names"
             "--force-exclusion"
             "--format" "emacs"
