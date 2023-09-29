@@ -38,7 +38,7 @@ Otherwise report style issues as well."
    (error line-start (file-name) ":" line ":" column ": " (or "E" "F") ": "
           (optional (id (one-or-more (not (any ":")))) ": ") (message)
           line-end))
-  :modes (enh-ruby-mode ruby-mode)
+  :modes (enh-ruby-mode ruby-mode ruby-base-mode ruby-ts-mode)
   :next-checkers ((warning . ruby-reek)
                   (warning . ruby-rubylint)))
 
